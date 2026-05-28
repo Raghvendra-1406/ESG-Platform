@@ -12,7 +12,20 @@ npm run dev
 
 ## Configuration
 
-Set `VITE_API_BASE_URL` if your backend is not available through `/api`.
+Set `VITE_API_BASE_URL` to your backend URL. For this project, use:
+
+```bash
+VITE_API_BASE_URL=https://esg-backend-imi5.onrender.com
+```
+
+For Render, use:
+
+```bash
+npm install
+npm run build
+```
+
+Publish directory: `dist`
 
 ## Main areas
 
