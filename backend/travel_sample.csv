@@ -1,0 +1,6 @@
+employee_id,employee_name,travel_mode,from_city,to_city,distance_km,travel_date,expense_amount
+EMP001,Rahul Sharma,Flight,Pune,Delhi,1450,2026-02-01,12500
+EMP002,Priya Mehta,Train,Mumbai,Ahmedabad,530,2026-02-03,3200
+EMP003,Amit Verma,Car,Bangalore,Chennai,350,2026-02-04,4500
+EMP004,Sneha Joshi,Flight,Pune,New York,12500,2026-02-07,145000
+EMP005,Rohan Patil,Bus,Nagpur,Pune,720,2026-02-08,1800

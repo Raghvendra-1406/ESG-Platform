@@ -1,0 +1,6 @@
+meter_id,facility_name,electricity_kwh,billing_month,billing_year,provider,amount
+MTR1001,Pune Factory,12500,January,2026,MSEDCL,145000
+MTR1002,Mumbai Office,4200,January,2026,Adani Electricity,52000
+MTR1003,Nashik Warehouse,7800,January,2026,Tata Power,91000
+MTR1004,Pune Factory,500000,January,2026,MSEDCL,9000000
+MTR1005,Delhi Office,3900,January,2026,BSES,47000

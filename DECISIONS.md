@@ -1,0 +1,13 @@
+- Assumption: one tenant owns one isolated ESG workspace.
+- Assumption: SAP, Utility, and Travel are the only source types needed for this flow.
+- Chosen approach: keep raw uploads separate from normalized records.
+- Chosen approach: use a batch per reporting period so the three source files can be normalized together.
+- Chosen approach: store audit history at the record level so changes can be traced later.
+- Why: this keeps the workflow simple and easier to review.
+- Unclear: should analysts be allowed to edit every workflow state, or only a smaller subset?
+- Unclear: should a new upload replace the current batch immediately or wait for explicit normalization every time?
+- Unclear: should missing fields block normalization or only create warnings?
+- Used from SAP: invoice, vendor, plant, material, quantity, and transaction date.
+- Used from Utility: meter, facility, electricity usage, billing month, billing year, and provider.
+- Used from Travel: employee, travel mode, cities, distance, travel date, and expense amount.
+- Ignored: columns that do not map cleanly to the normalized ESG model.

@@ -1,0 +1,6 @@
+invoice_id,vendor_name,plant,material_type,quantity,unit,amount,currency,transaction_date,source_system
+SAP1001,Indian Oil,Pune Plant,Diesel,1200,Liters,132000,INR,2026-01-10,SAP
+SAP1002,BPCL,Mumbai Plant,Petrol,800,Liters,92000,INR,2026-01-12,SAP
+SAP1003,Adani Energy,Nagpur Plant,Coal,2500,Kg,210000,INR,2026-01-15,SAP
+SAP1004,Indian Oil,Pune Plant,Diesel,99999,Liters,9000000,INR,2026-01-16,SAP
+SAP1005,Shell,Bangalore Plant,Natural Gas,450,Kg,87000,INR,2026-01-18,SAP

@@ -1,0 +1,1 @@
+from .ingestion_service import process_uploaded_csv

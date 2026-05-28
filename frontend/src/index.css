@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --app-bg: #f8fafc;
+    --app-surface: rgba(255, 255, 255, 0.9);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Segoe UI', Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    @apply focus:outline-none;
+  }
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(15, 23, 42, 0.06), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+}
