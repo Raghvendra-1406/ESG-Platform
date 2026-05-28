@@ -1,6 +1,6 @@
 from django.db import models
 
-from tenants.models import Tenant
+from backend.tenants.models import Tenant
 
 
 class DataSourceBatch(models.Model):

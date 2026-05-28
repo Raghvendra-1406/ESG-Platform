@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
-from tenants.services import get_user_role
-from audits.models import AuditLog
+from backend.tenants.services import get_user_role
+from backend.audits.models import AuditLog
 
 from .models import (
     RawRecord,

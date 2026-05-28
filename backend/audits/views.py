@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from tenants.services import get_user_tenant, is_platform_admin
+from backend.tenants.services import get_user_tenant, is_platform_admin
 
 from .models import AuditLog
 

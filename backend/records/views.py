@@ -19,9 +19,9 @@ from .workflow_service import (
     lock_record,
 )
 
-from tenants.services import get_user_tenant
-from tenants.services import get_user_role
-from ingestion.models import DataSourceBatch
+from backend.tenants.services import get_user_tenant
+from backend.tenants.services import get_user_role
+from backend.ingestion.models import DataSourceBatch
 
 
 def _latest_complete_batch_for_tenant(tenant):

@@ -14,23 +14,23 @@ urlpatterns = [
 
     path(
         'api/records/',
-        include('records.urls')
+        include('backend.records.urls')
     ),
     path(
         'api/ingestion/',
-        include('ingestion.urls')
+        include('backend.ingestion.urls')
     ),
     path(
         'api/auth/',
-        include('authapi.urls')
+        include('backend.authapi.urls')
     ),
     path(
         'api/admin/',
-        include('adminapi.urls')
+        include('backend.adminapi.urls')
     ),
     path(
         'api/audits/',
-        include('audits.urls')
+        include('backend.audits.urls')
     ),
 ]
 

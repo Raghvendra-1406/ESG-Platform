@@ -4,8 +4,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from tenants.models import Tenant, TenantUserProfile
-from tenants.services import is_platform_admin
+from backend.tenants.models import Tenant, TenantUserProfile
+from backend.tenants.services import is_platform_admin
 
 UserModel = get_user_model()
 

@@ -9,8 +9,8 @@ from .serializers import (
 )
 from .ingestion_service import get_or_create_upload_batch, normalize_batch
 from .models import DataSourceBatch
-from records.models import RawRecord, NormalizedRecord
-from tenants.services import get_user_tenant, get_user_role
+from backend.records.models import RawRecord, NormalizedRecord
+from backend.tenants.services import get_user_tenant, get_user_role
 
 
 def _reporting_period_from_request(request):

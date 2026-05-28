@@ -2,8 +2,8 @@ from django.db.models import Q
 from django.utils import timezone
 from rest_framework.exceptions import PermissionDenied, ValidationError
 
-from audits.audit_service import log_record_change
-from tenants.services import get_user_role, get_user_tenant, is_platform_admin
+from backend.audits.audit_service import log_record_change
+from backend.tenants.services import get_user_role, get_user_tenant, is_platform_admin
 
 
 def _snapshot(record):

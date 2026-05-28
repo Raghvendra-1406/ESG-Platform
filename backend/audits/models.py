@@ -1,8 +1,8 @@
 from django.conf import settings
 from django.db import models
 
-from tenants.models import Tenant
-from records.models import NormalizedRecord
+from backend.tenants.models import Tenant
+from backend.records.models import NormalizedRecord
 
 
 class AuditLog(models.Model):

@@ -3,7 +3,7 @@ from datetime import datetime
 import pandas as pd
 from rest_framework.exceptions import ValidationError
 
-from audits.audit_service import log_record_change
+from backend.audits.audit_service import log_record_change
 from .models import NormalizedRecord
 
 

@@ -3,10 +3,10 @@ from pathlib import Path
 from rest_framework.exceptions import ValidationError
 from django.db import transaction
 
-from tenants.services import get_user_tenant, get_user_role
+from backend.tenants.services import get_user_tenant, get_user_role
 
 from .models import DataSource, DataSourceBatch
-from records.validation_service import validate_raw_record
+from backend.records.validation_service import validate_raw_record
 
 
 def _default_reporting_period():
@@ -128,7 +128,7 @@ def process_uploaded_csv(data_source, user=None):
 
     for _, row in df.iterrows():
 
-        from records.models import RawRecord
+        from backend.records.models import RawRecord
 
         raw_record = RawRecord.objects.create(
             data_source=data_source,
@@ -160,7 +160,7 @@ def normalize_batch(batch, user=None):
     processed = 0
     for raw_record in all_raw_records:
         if raw_record.validation_status != 'FAILED':
-            from records.normalization_service import normalize_raw_record
+            from backend.records.normalization_service import normalize_raw_record
 
             normalize_raw_record(raw_record, actor=user)
             processed += 1

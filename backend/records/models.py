@@ -1,8 +1,8 @@
 from django.db import models
 
-from tenants.models import Tenant
+from backend.tenants.models import Tenant
 
-from ingestion.models import DataSource
+from backend.ingestion.models import DataSource
 
 
 class RawRecord(models.Model):
