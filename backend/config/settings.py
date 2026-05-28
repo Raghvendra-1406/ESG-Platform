@@ -46,10 +46,10 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
 
-    'tenants',
-    'ingestion',
-    'records',
-    'audits',
+    'backend.tenants',
+    'backend.ingestion',
+    'backend.records',
+    'backend.audits',
 ]
 
 MIDDLEWARE = [
